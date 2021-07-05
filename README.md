@@ -1,37 +1,52 @@
 ## Machine Learning
 
-[] [AI Rock Paper Scissors]()
+- [x] [AI Eye tracking](./ml-eye-tracking)
+    - improve, show message to look at
 
-[] [AI Eye tracking](https://youtu.be/6s2Ug-eVpVc)
+- [x] [AI Face expression detection](./ml-facial-expressions)
+    - improve, show slider with expressions
 
-[] [AI Face detection](https://youtu.be/CVClHLwv-4I)
+- [x] [AI Face recognition](./ml-face-recognition)
+    -   improve, add record face for recognition
 
-[] [AI Face recognition](https://youtu.be/AZ4PdALMqx0)
+- [] [AI Hand Image Slider]()
+    - mediapipe, knn?
 
-[] [AI image slider]()
+- [ ] [AI Like and Dislike Recognition]()
 
-[] [AI Text to Speech](https://youtu.be/nx_k1XCaWWs)
+- [x] [AI Speech to Text](./ml-speech-to-text)
 
-[] [AI Speech to Text]()
+- [x] [AI Text to Speech](./ml-text-to-speech)
 
-[] [AI Voice Command]()
+- [] [AI Voice Command]()
+https://www.youtube.com/watch?v=4xwruFAvEHA
 
-[] [AI Character recognition (OCR)]()
+- [x] [AI Image to Text (OCR)](./ml-image-to-text)
+    - improve visual, show line confidence, total confidence, progress bar, escolher lingua
 
-[] [AI News Recommender using Naive Bayes]()
+- [] [AI QR code scanner](https://itnext.io/creating-a-real-time-qr-code-scanner-with-vanilla-javascript-part-1-2-creating-the-scanner-a8934ee8f614)
 
-[] [AI Youtube Recommender](https://towardsdatascience.com/machine-learning-and-recommender-systems-using-your-own-spotify-data-4918d80632e3)
+- [] [AI News Recommender using Naive Bayes]()
 
-[] [AI Face generation (GAN)]()
+- [] [AI Youtube Recommender](https://towardsdatascience.com/machine-learning-and-recommender-systems-using-your-own-spotify-data-4918d80632e3)
 
-[] [AI Image Moderator]()
+- [] [AI Face generation (GAN)]()
 
-[] [AI driving]() - drive car game using computer vision of hand
+- [] [AI Image Moderator]()
+    - see whitepaper, AWS e GCP
 
-[] [AI push-up count]()
+- [] [AI driving]() 
+    - drive car game using computer vision of hand
 
-[] [AI background removal]()
+- [] [AI push-up count]()
 
-[] [IA car counter]()
+- [] [AI background removal]()
+https://colab.research.google.com/drive/1cTxFq1YuoJ5QPqaTcnskwlHDolnjBkB9?usp=sharing#scrollTo=I5cZEZcvBXNP
 
-[] [AI face anonymizator]()
+- [] [IA car counter]()
+
+- [] [AI face anonymizator]()
+
+- [] [AI Video analytics]()
+
+- [] [AI text summarization]()
