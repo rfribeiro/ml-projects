@@ -1,4 +1,6 @@
 window.saveDataAcrossSessions = true
+
+const imgContainer = document.querySelector('.container_img')
 let imageElement = getNewImage()
 let nextImageElement = getNewImage(true)
 
@@ -44,7 +46,7 @@ webgazer
     })
     .begin()
 
-webgazer.showVideoPreview(false).showPredictionPoints(false)
+webgazer.showVideoPreview(false).showPredictionPoints(true)
 
 function getNewImage(next = false) {
     const img = document.createElement("img")
@@ -53,6 +55,6 @@ function getNewImage(next = false) {
         img.classList.add("next")
     }
         
-    document.body.append(img)
+    imgContainer.append(img)
     return img
 }
