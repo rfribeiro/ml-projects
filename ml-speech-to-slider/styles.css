@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+i {
+    font-size: 6rem;
+}
+
+.container_img_text {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 200px;
+    align-items: center;
+}
+
+.mic-button {
+    cursor: pointer;
+    border: 2px solid white;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: transparent;
+    color: white;
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+
+.mic-button.active {
+    color: red;
+    border: 2px solid red;
+    animation: recording 2s infinite;
+}
+
+.container_img_text h2 {
+    text-align: center;
+}
+
+.container_img_text h2.active {
+    color: red;
+    animation: recording 2s infinite;
+}
+
+img {
+    width: 50vw;
+    height: 100vh;
+    transition: transform 600ms;
+    object-fit: cover;
+}
+
+img.left {
+    transform: translateX(-100vw);
+}
+
+img.right {
+    transform: translateX(100vw);
+}
+
+img.next {
+    display: none;
+}
+
+@keyframes recording {
+    0% {
+        }
+    50% {
+        opacity:0.3;
+        }
+    100% {
+        }  
+    }
