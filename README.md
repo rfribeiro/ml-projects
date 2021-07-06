@@ -1,28 +1,26 @@
 ## Machine Learning
 
-- [x] [AI Eye tracking](./ml-eye-tracking)
-    - improve, show message to look at
+- [x] [AI Eye tracking - Image Slider](./ml-eye-tracking)
 
 - [x] [AI Face expression detection](./ml-facial-expressions)
-    - improve, show slider with expressions
 
 - [x] [AI Face recognition](./ml-face-recognition)
-    -   improve, add record face for recognition
 
-- [] [AI Hand Image Slider]()
-    - mediapipe, knn?
+- [ ] [AI Like and Dislike - Image Slider](./ml-image-recognition)
 
-- [ ] [AI Like and Dislike Recognition]()
+- [] [AI Hand Action - Image Slider](./ml-action-recognition)
+    - mediapipe + knn, opticalflow + knn?
 
 - [x] [AI Speech to Text](./ml-speech-to-text)
 
 - [x] [AI Text to Speech](./ml-text-to-speech)
 
-- [] [AI Voice Command]()
-https://www.youtube.com/watch?v=4xwruFAvEHA
+- [x] [AI Voice Command - Image Slider](./ml-speech-to-slider)
 
 - [x] [AI Image to Text (OCR)](./ml-image-to-text)
     - improve visual, show line confidence, total confidence, progress bar, escolher lingua
+
+- [x] [AI Image Text - Image Slider](./ml-image-to-text-slider)
 
 - [] [AI QR code scanner](https://itnext.io/creating-a-real-time-qr-code-scanner-with-vanilla-javascript-part-1-2-creating-the-scanner-a8934ee8f614)
 
