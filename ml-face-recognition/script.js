@@ -26,10 +26,10 @@ async function start() {
         const detections = await faceapi.detectAllFaces(image)
         .withFaceLandmarks().withFaceDescriptors()
         
-        const risizedDetections = faceapi.resizeResults(detections, displaySize)
-        const results = risizedDetections.map( d => faceMatcher.findBestMatch(d.descriptor))
+        const resizedDetections = faceapi.resizeResults(detections, displaySize)
+        const results = resizedDetections.map( d => faceMatcher.findBestMatch(d.descriptor))
         results.forEach((result, i) => {
-            const box = risizedDetections[i].detection.box
+            const box = resizedDetections[i].detection.box
             const drawBox = new faceapi.draw.DrawBox(box, {label: 
             result.toString() })
             drawBox.draw(canvas)
@@ -38,8 +38,13 @@ async function start() {
 }
 
 function loadLabeledImages() {
-    const labels = ['Black Widow', 'Captain America', 'Captain Marvel', 
-                    'Hawkeye', 'Jim Rhodes', 'Thor', 'Tony Stark']
+    const labels = ['Black Widow',
+                    'Captain America',
+                    'Captain Marvel',
+                    'Hawkeye',
+                    'Jim Rhodes',
+                    'Thor',
+                    'Tony Stark']
     return Promise.all(
         labels.map(async label => {
             const descriptions = []
