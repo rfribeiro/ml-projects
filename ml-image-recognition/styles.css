@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    overflow: hidden;
+    font-family: "Roboto", sans-serif;
+}
+
+.console {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 300px;
+}
+
+.console video {
+    display: flex;
+    justify-content: center;
+  }
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.console-button {
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    background: #307ecc;
+    color: #fff;
+    width: 70px;
+    height: 40px;
+}
+
+img {
+    position: relative;
+    width: 50vw;
+    height: 60vh;
+    margin-bottom: 50px;
+    transition: transform 600ms;
+    object-fit: cover;
+    z-index: 1;
+}
+
+img.left {
+    transform: translateX(-100vw);
+}
+
+img.right {
+    transform: translateX(100vw);
+}
+
+img.next {
+    display: none;
+}
+
+.animation {
+    position: absolute;
+    font-size: 300px;
+    top: 50%;
+    left: 50%;
+    z-index: 1000;
+    transform: translate(-50%,15%);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear .9s, opacity .9s;
+}
+
+.animation.active {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s linear 0s, opacity .9s;
+}
+
+.fa-thumbs-up {
+    color: green;
+}
+
+.fa-thumbs-down {
+    color: red;
+}
