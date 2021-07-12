@@ -6,7 +6,7 @@
 
 - [x] [AI Face recognition](./ml-face-recognition)
 
-- [ ] [AI Like and Dislike - Image Slider](./ml-image-recognition)
+- [x] [AI Like and Dislike - Image Slider](./ml-image-recognition)
 
 - [] [AI Hand Action - Image Slider](./ml-action-recognition)
     - mediapipe + knn, opticalflow + knn?
@@ -28,23 +28,24 @@
 
 - [] [AI Youtube Recommender](https://towardsdatascience.com/machine-learning-and-recommender-systems-using-your-own-spotify-data-4918d80632e3)
 
-- [] [AI Face generation (GAN)]()
-
 - [] [AI Image Moderator]()
     - see whitepaper, AWS e GCP
 
-- [] [AI driving]() 
-    - drive car game using computer vision of hand
+- [] [AI Driving]() 
+    - drive car game using computer vision of hand (mediapipe)
 
 - [] [AI push-up count]()
 
-- [] [AI background removal]()
-https://colab.research.google.com/drive/1cTxFq1YuoJ5QPqaTcnskwlHDolnjBkB9?usp=sharing#scrollTo=I5cZEZcvBXNP
+- [] [AI background removal](https://colab.research.google.com/drive/1cTxFq1YuoJ5QPqaTcnskwlHDolnjBkB9?usp=sharing#scrollTo=I5cZEZcvBXNP)
 
-- [] [IA car counter]()
+- [] [IA Car Counter]()
 
-- [] [AI face anonymizator]()
+- [] [IA Face Mask detector]()
 
-- [] [AI Video analytics]()
+- [] [AI Face Anonymizator]()
 
-- [] [AI text summarization]()
+- [] [AI Video Analytics]()
+
+- [] [AI Text Summarization]()
+
+- [] [AI Face Generation (GAN)]()
