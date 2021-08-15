@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    width: 100vw;
+    height: 100vh;
+}
+
+.console {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 400px;
+}
+
+.containermask {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-top: 0px;
+    width: 300px;
+    height: 100vh;
+}
+
+.no-mask {
+    direction: rtl;
+}
+
+.containermask img {
+    width: 100px;
+    height: 100px;
+    border: 6px solid;
+    border-radius: 10px;
+    margin: 2.5px;
+}
+
+.no-mask-result {
+    border-color:red;
+}
+
+.mask-result {
+    border-color:green;
+}
+
+.console .container-video {
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    border: 20px solid;
+    position: relative;
+  }
+
+.text-class-result {
+    position: absolute;
+    top: 2%;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    opacity: 60%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.console-button {
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    background: #307ecc;
+    color: #fff;
+    width: 105px;
+    height: 40px;
+}
+
+canvas {
+    display: none;
+}
+
+@media (max-width: 720px) {
+    .container {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 700px;
+    }
+
+    #main { 
+        order: 1; 
+    }
+    #no-mask { 
+        order: 2; 
+    }
+    #mask { 
+        order: 3; 
+    }
+    .console {
+        margin-top: 20px;
+    }
+    .containermask {
+        flex-direction: row;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        width: 100vw;
+        height: 140px;
+    }
+}

@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <!-- Load the latest version of TensorFlow.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@tensorflow-models/knn-classifier"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mask detector</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="containermask no-mask" id="no-mask">
+      </div>
+      <div class="console" id="main">
+        <div class="container-video">
+          <video class="no-result" autoplay playsinline muted id="webcam" width="300" height="300"></video>
+          <div class="text-class-result">Esperando</div>
+        </div>
+        <div class="buttons">
+          <button id="class-a" class="console-button">Sem Mascara</button>
+          <button id="class-b" class="console-button">Neutro</button>
+          <button id="class-c" class="console-button">Com Mascara</button>
+        </div>
+      </div>
+      <div class="containermask mask" id="mask">
+      </div>
+    </div>
+    <canvas id="canvas" ></canvas>
+    <!-- Load index.js after the content of the page -->
+    <script defer src="script.js"></script>
+  </body>
+</html>
