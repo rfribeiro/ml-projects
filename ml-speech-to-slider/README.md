@@ -6,12 +6,12 @@ The idea is to implement a project tht you will say some words like "like", "goo
 
 
 # 📸 Screenshot
-<img src="https://storage.googleapis.com/rfribeiro-javascript/ml-speech-to-slider/presentation.png" width="640">
+<img src="https://storage.googleapis.com/rfribeiro-ml-projects/ml-speech-to-slider/presentation.png" width="640">
 
 
 # 🎥 Movie
-<img src="https://storage.googleapis.com/rfribeiro-javascript/ml-speech-to-slider/presentation.gif" width="640">
+<img src="https://storage.googleapis.com/rfribeiro-ml-projects/ml-speech-to-slider/presentation.gif" width="640">
 
 # 🚀 Live
 
-Check the live design [HERE](https://storage.googleapis.com/rfribeiro-javascript/ml-speech-to-slider/index.html)
+Check the live design [HERE](https://storage.googleapis.com/rfribeiro-ml-projects/ml-speech-to-slider/index.html)

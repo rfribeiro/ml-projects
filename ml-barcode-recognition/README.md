@@ -1,6 +1,6 @@
 # 🎨 Javascript - Barcode recognition
 
-The idea is to create a website to explore javascript language through projects 
+The idea is to create a website to read barcode using the mobile phone
 
 It is based on the design developed and implemented  on [Web Youtube Channel](https://www.youtube.com/watch?v=BvhYm0BOLvA)
 
