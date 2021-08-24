@@ -6,12 +6,12 @@ It is based on the project developed and implemented  on [Web Dev Simplified You
 
 
 # 📸 Screenshot
-<img src="https://storage.googleapis.com/rfribeiro-ml-projects/ml-face-recognition/presentation.png" width="640">
+<img src="https://storage.googleapis.com/rfribeiro-ml-projects/ml-facial-expressions/presentation.png" width="640">
 
 
 # 🎥 Movie
-<img src="https://storage.googleapis.com/rfribeiro-ml-projects/ml-face-recognition/presentation.gif" width="640">
+<img src="https://storage.googleapis.com/rfribeiro-ml-projects/ml-facial-expressions/presentation.gif" width="640">
 
 # 🚀 Live
 
-Check the live design [HERE](https://storage.googleapis.com/rfribeiro-ml-projects/ml-face-recognition/index.html)
+Check the live design [HERE](https://storage.googleapis.com/rfribeiro-ml-projects/ml-facial-expressions/index.html)
