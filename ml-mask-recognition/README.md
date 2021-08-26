@@ -11,12 +11,7 @@ It is based on the project developed and implemented  on my github page using py
 
 # 🎥 Movie
 
-<figure class="video_container">
-  <video controls="true" allowfullscreen="true" width="680px" poster="presentation.png">
-    <source src="https://storage.googleapis.com/rfribeiro-ml-projects/ml-mask-recognition/presentation.mp4" type="video/mp4">
-  </video>
-</figure>
-
+[![Mask Detector Video - Better Resolution](https://storage.googleapis.com/rfribeiro-ml-projects/ml-mask-recognition/presentation.gif)](https://storage.googleapis.com/rfribeiro-ml-projects/ml-mask-recognition/presentation.mp4)
 
 # 🏋🏻‍♂️ Pre-Trained Model
 
