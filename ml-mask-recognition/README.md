@@ -10,8 +10,23 @@ It is based on the project developed and implemented  on my github page using py
 
 
 # 🎥 Movie
-<img src="https://storage.googleapis.com/rfribeiro-ml-projects/ml-mask-recognition/presentation.gif" width="640">
 
-# 🚀 Live
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true" width="680px" poster="presentation.png">
+    <source src="https://storage.googleapis.com/rfribeiro-ml-projects/ml-mask-recognition/presentation.mp4" type="video/mp4">
+  </video>
+</figure>
 
-Check the live design [HERE](https://storage.googleapis.com/rfribeiro-ml-projects/ml-mask-recognition/index.html)
+
+# 🏋🏻‍♂️ Pre-Trained Model
+
+You can download a pre-trained model to load in the application
+
+[Mask Detector Pre-Trained Model](https://storage.googleapis.com/rfribeiro-ml-projects/ml-mask-recognition/model/model.json)
+
+
+# 🤖 Live
+
+Check the Mask application running live at 
+
+[Mask Detector Application](https://storage.googleapis.com/rfribeiro-ml-projects/ml-mask-recognition/index.html)
