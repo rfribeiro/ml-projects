@@ -3,14 +3,14 @@ const videoContainerElement = document.querySelector('.container-video')
 const classResultElement = document.querySelector('.text-class-result')
 
 let net;
-const classifier = knnClassifier.create();
+let classifier = knnClassifier.create();
 let predictions = []
 
 const noMaskElement = document.querySelector('.no-mask')
 const maskElement = document.querySelector('.mask')
 const canvas = document.getElementById('canvas');
 
-const MAX_SEQUENCE = 30
+const MAX_SEQUENCE = 20
 
 const allEqual = arr => arr.every(val => val === arr[0]);
 
@@ -35,10 +35,52 @@ function takepicture(classId) {
         } else if (classId == 2) {
             photo.style.borderColor = "green";
             maskElement.appendChild(photo)
-        }
-        
+        } 
     }
 }
+
+async function saveModel(classifierModel) {
+  let datasets = await classifierModel.getClassifierDataset();
+  let datasetObject = {};
+  await Object.keys(datasets).forEach(async (key) => {
+    let data = await datasets[key].dataSync();
+    datasetObject[key] = Array.from(data);
+  });
+  let jsonModel = JSON.stringify(datasetObject);
+  console.log(jsonModel);
+  let downloader = document.createElement('a');
+  downloader.download = "model.json";
+  downloader.href = 'data:text/text;charset=utf-8,' + encodeURIComponent(jsonModel);
+  document.body.appendChild(downloader);
+  downloader.click();
+  downloader.remove();
+}
+
+async function loadModel(classifierModel, file) {
+  let fr = new FileReader();
+  fr.onload = async () => {
+    var dataset = fr.result;
+    var tensorObj = JSON.parse(dataset);
+
+    Object.keys(tensorObj).forEach((key) => {
+      tensorObj[key] = tf.tensor(tensorObj[key], [tensorObj[key].length / 1024, 1024]);
+    });
+    classifierModel.setClassifierDataset(tensorObj);
+
+    console.log("Classifier has been set up! Congrats! ");
+  };
+  await fr.readAsText(file);
+}
+
+async function uploadModel(classifierModel) {
+  let inputModel = document.getElementById('load-model').files;
+  console.log("Uploading");
+  if (inputModel.length>0) {
+    loadModel(classifierModel, inputModel[0])
+  }
+  console.log("Uploaded");
+}
+
 
 async function app() {
 
@@ -68,16 +110,20 @@ async function app() {
   document.getElementById('class-b').addEventListener('click', () => addExample(1));
   document.getElementById('class-c').addEventListener('click', () => addExample(2));
 
+  document.getElementById('load-model').addEventListener('change', () => uploadModel(classifier));
+  document.getElementById('save-model').addEventListener('click', () => saveModel(classifier));
+
   let classCounter = 0;
   while (true) {
     if (classifier.getNumClasses() === 3) {
+      // Get the image from webcam
       const img = await webcam.capture();
       // Get the activation from mobilenet from the webcam.
       const activation = net.infer(img, 'conv_preds');
       // Get the most likely class and confidence from the classifier module.
       const result = await classifier.predictClass(activation, k=3);
       const classes = ['Sem Mascara', 'Neutro', 'Com Mascara'];
-      console.log(result.label, result.label === classes[0])
+      //console.log(result.label, result.label === classes[0])
     if (predictions.length === MAX_SEQUENCE) {
         predictions.shift()
       }

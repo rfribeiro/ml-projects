@@ -91,6 +91,45 @@ body {
     height: 40px;
 }
 
+
+.model-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 345px;
+}
+
+input[type='file'] {
+    display: none
+  }
+
+label {
+    background: #307ecc;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin: 5px;
+    width: 160px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+  }
+
+#save-model {
+    border: none;
+    background: #307ecc;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin: 5px;
+    width: 160px;
+    height: 40px; 
+    font-size: 15px;
+}
+
 canvas {
     display: none;
 }
@@ -99,7 +138,7 @@ canvas {
     .container {
         flex-direction: column;
         justify-content: space-around;
-        height: 700px;
+        height: 800px;
     }
 
     #main { 
